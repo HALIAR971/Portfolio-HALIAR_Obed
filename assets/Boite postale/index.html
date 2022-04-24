@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'étiquettes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+    <main>
+    <h1>Générateur d'étiquettes</h1>
+
+    <form class="main-form" method="POST" action="etiquette.php">
+        <div>
+          <label for="name">Nom de famille :</label>
+          <input type="text" name="name" id="name" placeholder="Nom...">
+        </div>
+     
+      <div>
+        <label for="firstname">Prenom :</label>
+        <input type="text" name="firstname" id="firstname"> 
+      </div>
+        
+     <div>
+        <label for="numberbox">Numéro de boite:</label> 
+        <input type="number" name="numberbox" id="numberbox"> 
+     </div>
+
+     <div>
+      <label for="number">Nombre d'étiquettes:</label> 
+      <input type="number" name="number" id="number"> 
+   </div>
+    
+     <div>
+        <label for="ads">Interdire la publicité</label>
+        <input type="checkbox" name="ads" id="ads" checked>
+     </div>
+     
+
+      <input type="submit" value="Générer"> 
+
+    </form>
+</main> 
+</center> 
+</body>
+</html>

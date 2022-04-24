@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+
+h1{
+    color: whitesmoke;
+    font-family: 'Londrina Solid', cursive;
+    
+}
+
+body{
+    background-color: seagreen;
+    
+}
+
+main{
+    margin: 40px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+form.main-form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+form.main-form input [type=text] {
+    color:whitesmoke ;
+    
+    
+}
+
+
+label{
+    color: whitesmoke;
+    font-family: 'Londrina Solid', cursive;
+    padding-right: 20px;
+}
+
+form.main-form div {
+    margin-bottom: 10px;
+}
+
+form.main-form input [type=submit]{
+    color:seagreen;
+    margin-top: 20px;
+}
+
+
+    
