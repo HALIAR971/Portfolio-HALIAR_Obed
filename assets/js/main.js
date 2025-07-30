@@ -41,6 +41,39 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+/*==================== THEME TOGGLE ====================*/
+const themeToggle = document.getElementById('theme-toggle')
+const body = document.body
+const icon = themeToggle.querySelector('i')
+
+// Check for saved theme preference or default to light theme
+const currentTheme = localStorage.getItem('theme') || 'light'
+body.classList.toggle('dark-theme', currentTheme === 'dark')
+
+// Update icon based on current theme
+function updateIcon() {
+    if (body.classList.contains('dark-theme')) {
+        icon.className = 'bx bx-moon'
+    } else {
+        icon.className = 'bx bx-sun'
+    }
+}
+
+// Initialize icon
+updateIcon()
+
+// Theme toggle event
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-theme')
+    
+    // Save theme preference
+    const theme = body.classList.contains('dark-theme') ? 'dark' : 'light'
+    localStorage.setItem('theme', theme)
+    
+    // Update icon
+    updateIcon()
+})
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
